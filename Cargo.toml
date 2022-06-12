@@ -3,5 +3,20 @@ name = "thea"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+crate-type = ["cdylib", "rlib"]
+
 [dependencies]
-bevy = { version = "0.7", features = ["dynamic"] }
+env_logger = { version = "0.9", default-features = false, features = ["termcolor", "atty"] }
+glam = "0.20.0"
+rend3 = "0.3.0"
+rend3-routine = "0.3.0"
+rend3-framework = "0.3.0"
+winit = "0.26"
+profiling = "1.0"
+anyhow = "1.0"
+imgui = "0.8"
+imgui-winit-support = { version = "0.8", default-features = false, features = ["winit-26"] }
+rend3-imgui = "0.3"
+instant = "0.1"
+legion = "0.4"
