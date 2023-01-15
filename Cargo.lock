@@ -1888,7 +1888,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "thea"
+name = "theaa"
 version = "0.1.0"
 dependencies = [
  "anyhow",
